@@ -9,10 +9,12 @@
 	<li><a href="./04- Rock Paper Scissors">Projeto 4 - Rock, Paper, Scissors</a></li>
 	<li><a href="./05- Python Loops">Projeto 5 - Password Generator</a></li>
  	<li><a href="./06- Functions & Karel">Projeto 6 - Functions</a></li>
-  <li><a href="./07- Hangman">Projeto 7 - Hangman</a></li>
-  <li><a href="./08- Caesar Cipher">Projeto 8 - Caesar Cipher</a></li>
-  <li><a href="./09- Secret Auction">Projeto 9 - Secret Auction</a></li>
-  <li><a href="./10- Calculator">Projeto 10 - Calculator</a></li>
+	<li><a href="./07- Hangman">Projeto 7 - Hangman</a></li>
+	<li><a href="./08- Caesar Cipher">Projeto 8 - Caesar Cipher</a></li>
+	<li><a href="./09- Secret Auction">Projeto 9 - Secret Auction</a></li>
+  	<li><a href="./10- Calculator">Projeto 10 - Calculator</a></li>
+	<li><a href="./11- The Blackjack Capstone">Projeto 11- The Blackjack Capstone</a></li>
+	
 </ol>
 
 <h2>Como executar cada projeto?</h2>
