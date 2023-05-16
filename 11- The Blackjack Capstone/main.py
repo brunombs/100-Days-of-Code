@@ -1,85 +1,73 @@
 from art import logo
 import random
-cards = [11, 2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10]
 
+def deal_card():
+    cards = [11, 2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10]
+    card = random.choice(cards)
+    return card
 
-def random_number():
-    return random.choice(cards)
+def calculate_score(cards):
+    if sum(cards) == 21 and len(cards) == 2:
+        return 0
 
+    if 11 in cards and sum(cards) > 21:
+        cards.remove(11)
+        cards.append(1)
+    return sum(cards)
+
+def compare(user_score, computer_score):
+    if user_score > 21 and computer_score > 21:
+        return "You lose, you went over 21."
+
+    if user_score == computer_score:
+        return "That is a draw."
+    elif computer_score == 0:
+        return "You lose, your opponent has Blackjack."
+    elif user_score == 0:
+        return "You win with a Blackjack."
+    elif user_score > 21:
+        return "You lose, you went over 21."
+    elif computer_score > 21:
+        return "You win, your opponent went over 21."
+    elif user_score > computer_score:
+        return "You win."
+    else:
+        return "You lose."
 
 def blackjack():
-    user = [random_number(), random_number()]
-    computer = [random_number(), random_number()]
-    user_value = 0
-    computer_value = 0
+    print(logo)
+    user = []
+    computer = []
     continue_playing = True
 
-    for card in user:
-        user_value += card
-
-    for card in computer:
-        computer_value += card
+    for _ in range(2):
+        user.append(deal_card())
+        computer.append(deal_card())
 
     while continue_playing:
-
-        # check if computer has 21 or more.
-        if computer_value == 21 or computer_value > 21:
-            if computer_value > 21:
-                print(f"Computer lose with {computer_value} and user win with {user_value}")
-                break
-            print(f"Computer win with {computer_value} and you lose with {user_value}")
-            continue_playing = False
-            break
-
-        # check if user has 21 or more.
-        elif user_value == 21 or user_value > 21:
-            if user_value > 21:
-                print(f"You lose with {user_value} and computer with {computer_value}")
-                break
-            print(f"You win with {user_value} and computer lose with {computer_value}")
-            break
-
-        # show user cards
-        print(f"    Yours cards: {user[0]} and {user[1]}, total: {user_value}")
-
-        # show computer first card
+        user_score = calculate_score(user)
+        computer_score = calculate_score(computer)
+        print(f"    Your cards: {user[0]} and {user[1]}, total: {user_score}")
         print(f"    The first card of the computer is: {computer[0]}")
 
-        # check if user wants one more card
-        new_card = str(input("Type 'y' to get another card, type 'n' to pass: "))
-        if new_card == "n":
-            # check if computer value is <= 16
-            while computer_value < 16:
-                print("[...Computer picking another number...]")
-                new_number = random_number()
-                computer_value += new_number
-                print(f"Computer new number: {new_number}")
-
-            # check if it is a draw.
-            if computer_value == user_value:
-                print(f"That is a draw, both have {user_value}")
+        if user_score == 0 or computer_score == 0 or user_score > 21:
+            continue_playing = False
+        else:
+            new_card = str(input("Type 'y' to get another card, type 'n' to pass: "))
+            if new_card == "y":
+                user.append(deal_card())
+            else:
                 continue_playing = False
 
-            if computer_value > 21:
-                print(f"You win with {user_value} and computer lose with {computer_value}")
-            elif computer_value > user_value:
-                print(f"Computer win with {computer_value} and you lose with {user_value}")
-                continue_playing = False
-            elif user_value > computer_value:
-                print(f"You win with {user_value} and computer lose with {computer_value}")
-                continue_playing = False
-        elif new_card == "y":
-            user_value += random_number()
-            computer_value += random_number()
+        while computer_score != 0 and computer_score < 17:
+            print("[...Computer picking another number...]")
+            computer.append(deal_card())
+            computer_score = calculate_score(computer)
 
+    if user_score <= 21:
+        print(f"   Your final hand: {user}, final score: {user_score}")
+    print(f"   Computer's final hand: {computer}, final score: {computer_score}")
+    print(compare(user_score, computer_score))
 
-play = str(input("Do you want to play a game of Blackjack? Type 'y' or 'n': "))
-if play == "n":
-    play = False
-
-while play:
-    print(logo)
+while str(input("Do you want to play a game of Blackjack? Type 'y' or 'n': ")) != "n":
     blackjack()
-    play_again = str(input("Do you want to play again? Type 'y' or 'n': "))
-    if play_again != 'y':
-        play = False
