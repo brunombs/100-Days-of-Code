@@ -3,18 +3,18 @@
 
 <h2>Lista de Projetos</h2>
 <ol>
-	<li><a href="./01- Band Name Generator">Projeto 1 - Band Name Generator</a></li>
-	<li><a href="./02- Tip Calculator">Projeto 2 - Tip Calculator</a></li>
-	<li><a href="./03- Treasure Island">Projeto 3 - Treasure Island</a></li>
-	<li><a href="./04- Rock Paper Scissors">Projeto 4 - Rock, Paper, Scissors</a></li>
-	<li><a href="./05- Python Loops">Projeto 5 - Password Generator</a></li>
- 	<li><a href="./06- Functions & Karel">Projeto 6 - Functions</a></li>
-	<li><a href="./07- Hangman">Projeto 7 - Hangman</a></li>
-	<li><a href="./08- Caesar Cipher">Projeto 8 - Caesar Cipher</a></li>
-	<li><a href="./09- Secret Auction">Projeto 9 - Secret Auction</a></li>
-  	<li><a href="./10- Calculator">Projeto 10 - Calculator</a></li>
-	<li><a href="./11- The Blackjack Capstone">Projeto 11- The Blackjack Capstone</a></li>
-	<li><a href="./12- The Number GUessing">Projeto 12- The Number Guessing</a></li>	
+	<li><a href="./01- Band Name Generator">Band Name Generator</a></li>
+	<li><a href="./02- Tip Calculator">Tip Calculator</a></li>
+	<li><a href="./03- Treasure Island">Treasure Island</a></li>
+	<li><a href="./04- Rock Paper Scissors">Rock, Paper, Scissors</a></li>
+	<li><a href="./05- Python Loops">Password Generator</a></li>
+ 	<li><a href="./06- Functions & Karel">Functions</a></li>
+	<li><a href="./07- Hangman">Hangman</a></li>
+	<li><a href="./08- Caesar Cipher">Caesar Cipher</a></li>
+	<li><a href="./09- Secret Auction">Secret Auction</a></li>
+  	<li><a href="./10- Calculator">Calculator</a></li>
+	<li><a href="./11- The Blackjack Capstone">The Blackjack Capstone</a></li>
+	<li><a href="./12- The Number Guessing">The Number Guessing</a></li>	
 	
 </ol>
 
