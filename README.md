@@ -14,6 +14,7 @@
 	<li><a href="./09- Secret Auction">Projeto 9 - Secret Auction</a></li>
   	<li><a href="./10- Calculator">Projeto 10 - Calculator</a></li>
 	<li><a href="./11- The Blackjack Capstone">Projeto 11- The Blackjack Capstone</a></li>
+	<li><a href="./12- The Number GUessing">Projeto 12- The Number Guessing</a></li>	
 	
 </ol>
 
