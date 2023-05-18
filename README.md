@@ -14,7 +14,8 @@
 	<li><a href="./09- Secret Auction">Secret Auction</a></li>
   	<li><a href="./10- Calculator">Calculator</a></li>
 	<li><a href="./11- The Blackjack Capstone">The Blackjack Capstone</a></li>
-	<li><a href="./12- The Number Guessing">The Number Guessing</a></li>	
+	<li><a href="./12- The Number Guessing">The Number Guessing</a></li>
+	<li><a href="./13- Debugging">Debugging</a></li>
 	
 </ol>
 
