@@ -17,10 +17,10 @@ while game_on:
     print(f"Compare A: {a['name']}, {a['description']}, from {a['country']}")
     print(art.vs)
     print(f"Compare B: {b['name']}, {b['description']}, from {b['country']}")
-    awnser = input("Who has more followers? Type 'A' or 'B': ").lower()
-    while awnser != 'a' and awnser != 'b':
-        awnser = input("Who has more followers? Type ONLY 'A' or 'B': ").lower()
-    if awnser == higher_score:
+    answer = input("Who has more followers? Type 'A' or 'B': ").lower()
+    while answer != 'a' and answer != 'b':
+        answer = input("Who has more followers? Type ONLY 'A' or 'B': ").lower()
+    if answer == higher_score:
         score += 1
         print(f'You are right, your score is: {score}!')
     else:
