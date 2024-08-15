@@ -16,7 +16,8 @@
 	<li><a href="./11- The Blackjack Capstone">The Blackjack Capstone</a></li>
 	<li><a href="./12- The Number Guessing">The Number Guessing</a></li>
 	<li><a href="./13- Debugging">Debugging</a></li>
-	
+	<li><a href="./14- Higher Lower">Higher Lower</a></li>
+	<li><a href="./15- The Coffee Machine">The Coffee Machine</a></li>
 </ol>
 
 <h2>Como executar cada projeto?</h2>
